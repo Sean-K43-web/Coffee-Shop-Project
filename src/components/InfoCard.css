@@ -1,0 +1,28 @@
+.info-card {
+  background: #1C221C;
+  border-radius: 8px;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+.info-number {
+  margin-bottom: 12px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #C6FF3D;
+}
+
+.info-title { margin: 0 0 8px; font-size: 24px; }
+
+.info-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #C9D1C4;
+}
+
+@media (max-width: 700px) {
+  .info-card { padding: 24px; }
+  .info-number { font-size: 32px; }
+  .info-title { font-size: 20px; }
+}

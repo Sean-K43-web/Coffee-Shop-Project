@@ -1,0 +1,53 @@
+.card { display: flex; flex-direction: column; }
+.card-photo {
+  height: 240px;
+  background: #1C221C;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9AA59A;
+  overflow: hidden;
+}
+.card-photo img { width: 100%; height: 100%; object-fit: cover; }
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 12px 0;
+  font-size: 18px;
+}
+.card-name { margin: 0; font-size: 18px; }
+.card-price { color: #C6FF3D; font-weight: 700; }
+.card-btn {
+  margin-top: auto;
+  padding: 12px;
+  background: transparent;
+  color: #C6FF3D;
+  border: 1px solid #C6FF3D;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (hover: hover) {
+  .card-btn:hover {
+    background: #C6FF3D;
+    color: #0E110E;
+    box-shadow: 0 0 16px rgba(198, 255, 61, 0.5);
+  }
+}
+.card-btn:active {
+  background: #C6FF3D;
+  color: #0E110E;
+}
+.card-btn:focus-visible { outline: 3px solid #F2F5EE; outline-offset: 3px; }
+
+@media (max-width: 700px) {
+  .card-photo { height: 160px; }
+  .card-info { flex-direction: column; gap: 2px; font-size: 16px; }
+  .card-name { font-size: 16px; }
+}

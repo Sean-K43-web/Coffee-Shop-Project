@@ -1,0 +1,51 @@
+.visit-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 72px 64px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.visit-title {
+  margin: 0 0 24px;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.visit-address { margin: 0 0 12px; font-size: 18px; }
+
+.visit-text {
+  margin: 0 0 12px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #C9D1C4;
+}
+
+.visit-info .btn { margin-top: 12px; }
+
+.visit-map {
+  min-height: 300px;
+  background: #1C221C;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9AA59A;
+  overflow: hidden;
+}
+
+.visit-map iframe { width: 100%; height: 100%; border: 0; }
+
+@media (max-width: 700px) {
+  .visit-inner {
+    grid-template-columns: 1fr;
+    padding: 48px 20px;
+  }
+  .visit-title { font-size: 32px; margin-bottom: 16px; }
+  .visit-address, .visit-text { font-size: 16px; }
+  .visit-info .btn { width: 100%; }
+}

@@ -1,0 +1,52 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 260px;
+  min-height: 64px;
+  padding: 0 40px;
+  border-radius: 6px;
+  font-size: 19px;
+  font-weight: 700;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 2px solid #C6FF3D;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Order for pickup: green by default */
+.btn-solid {
+  background: #C6FF3D;
+  color: #0E110E;
+}
+
+/* See today's menu: outlined by default */
+.btn-outline {
+  background: transparent;
+  color: #C6FF3D;
+}
+
+/* Desktop: the same green glow on hover for both buttons */
+@media (hover: hover) {
+  .btn:hover {
+    background: #D9FF7A;
+    border-color: #D9FF7A;
+    color: #0E110E;
+    box-shadow: 0 0 24px rgba(198, 255, 61, 0.55);
+  }
+}
+
+/* Phones: the same glow while tapped */
+.btn:active {
+  background: #D9FF7A;
+  border-color: #D9FF7A;
+  color: #0E110E;
+  box-shadow: 0 0 24px rgba(198, 255, 61, 0.55);
+}
+
+/* Keyboard users */
+.btn:focus-visible {
+  outline: 3px solid #F2F5EE;
+  outline-offset: 3px;
+}
